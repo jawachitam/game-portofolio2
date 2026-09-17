@@ -1,0 +1,35 @@
+    body {
+    margin: 0;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+    color: white;
+    }
+
+    canvas {
+    border: 4px solid #fff;
+    background-color: #4caf50; /* Warna rumput */
+    }
+
+    /* Pop-up CV & Dialog */
+    .hidden { display: none !important; }
+
+    .modal, .dialog {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.85);
+    border: 2px solid #fff;
+    border-radius: 8px;
+    padding: 20px;
+    }
+
+    .modal-content { text-align: left; }
+    #closeModal { float: right; cursor: pointer; font-weight: bold; }
+
+    .dialog {
+    bottom: 50px;
+    width: 60%;
+    text-align: center;
+    }
