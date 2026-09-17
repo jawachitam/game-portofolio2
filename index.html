@@ -1,35 +1,27 @@
-    <!DOCTYPE html>
-    <html lang="id">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Interactive Game Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <!-- Meta tag ini PENTING BANGET biar layar HP gak bisa di-zoom/scroll pas main game di IG -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Portofolio Interaktif</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <!-- Canvas Game -->
-    <canvas id="gameCanvas" width="800" height="600"></canvas>
+  <!-- Game akan otomatis masuk ke tag body oleh Kaboom -->
 
-    <!-- UI Modal / Pop-up CV (Sembunyi secara default) -->
-    <div id="cvModal" class="modal hidden">
-        <div class="modal-content">
-        <span id="closeModal">&times;</span>
-        <h2>Tentang Gua & CV</h2>
-        <p>Halo! perkenalkan, aku Raihan anak yang hobi bikin hal-hal interaktif.</p>
-        <ul>
-            <li><b>Skills:</b> HTML, CSS, JavaScript, React, Node.js</li>
-            <li><b>Projects:</b> Web Apps, E-commerce, Game Portofolio</li>
-        </ul>
-        </div>
-    </div>
+  <!-- UI Tombol D-Pad untuk HP -->
+  <div id="dpad">
+    <div id="btn-up" class="d-btn">⬆️</div>
+    <div id="btn-left" class="d-btn">⬅️</div>
+    <div id="btn-down" class="d-btn">⬇️</div>
+    <div id="btn-right" class="d-btn">➡️</div>
+  </div>
 
-    <!-- Dialog Box NPC -->
-    <div id="dialogBox" class="dialog hidden">
-        <p id="dialogText"></p>
-    </div>
-    
+  <!-- Tombol Aksi (Buat interaksi NPC) -->
+  <div id="btn-action">A</div>
 
-    <script src="script.js"></script>
-    </body>
-    </html> 
+  <script type="module" src="script.js"></script>
+</body>
+</html>
