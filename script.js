@@ -36,7 +36,7 @@
         player.x + player.size > house.x &&
         player.y < house.y + house.height &&
         player.y + player.size > house.y
-    ) {
+    ) { 
         modal.classList.remove('hidden');
     }
 
@@ -47,7 +47,8 @@
         dialogBox.classList.remove('hidden');
     } else {
         dialogBox.classList.add('hidden');
-    }
+        }
+        
     }
 
     function draw() {
